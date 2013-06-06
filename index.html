@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Thunar-volman by Distrotech</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Thunar-volman</h1>
+          <h2>Mirror of git://git.xfce.org/xfce/thunar-volman</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/Distrotech/thunar-volman/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/Distrotech/thunar-volman/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/Distrotech/thunar-volman" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a name="what-is-it" class="anchor" href="#what-is-it"><span class="octicon octicon-link"></span></a>What is it?</h1>
+
+<p>thunar-volman is an extension for the Thunar File Manager, which enables
+automatic management of removable drives and media. For example, if
+thunar-volman is installed and configured properly, and you plug in your
+digitcal camera, it will automatically spawn your preferred photo application
+and import the new pictures from your camera.</p>
+
+<p>It was designed to look and behave similar to gnome-volume-manager to get
+consistent removable drive and media management in Xfce and GNOME. This is
+to help GNOME refugees and people using both Xfce and GNOME (i.e. having to
+use GNOME at the office).</p>
+
+<h1>
+<a name="required-packages" class="anchor" href="#required-packages"><span class="octicon octicon-link"></span></a>Required packages</h1>
+
+<p>thunar-volman depends on the following packages:</p>
+
+<ul>
+<li>Thunar 1.1.1 or above</li>
+<li>exo 0.5.0 or above</li>
+<li>glib 2.18.0 or above</li>
+<li>GTK+ 2.24.0 or above</li>
+<li>GUDev 145 or above</li>
+<li>libxfce4ui 4.7.0 or above</li>
+<li>libxfce4util 4.7.0 or above</li>
+<li>xfconf 4.7.0 or above</li>
+</ul><h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<p>The file 'INSTALL' contains generic installation instructions. For more
+detailed information, visit the thunar-volman website at
+<a href="http://www.xfce.org/%7Ebenny/projects/thunar-volman/index.html">http://www.xfce.org/~benny/projects/thunar-volman/index.html</a>.</p>
+
+<h1>
+<a name="debugging-support" class="anchor" href="#debugging-support"><span class="octicon octicon-link"></span></a>Debugging Support</h1>
+
+<p>thunar-volman currently supports four different levels of debugging support, which
+can be setup using the configure flag <code>--enable-debug' (check the output of
+</code>configure --help'):</p>
+
+<p>`full'    Use this if you want to debug thunar-volman to locate a bug.
+        The build will most probably be noticably slower. This is also
+        recommended for people that want to develop thunar-volman stuff.</p>
+
+<p>`yes'     This is the default for SVN snapshot builds. It adds all
+        kinds of checks to the code, and is therefore likely to run
+        slower.</p>
+
+<p>`minimum' This is the default for release builds, and presents the
+        recommended behaviour.</p>
+
+<p>`no'      Disables all sanity checks. Don't use this unless you know
+        exactly what you do.</p>
+
+<h1>
+<a name="standards-compliance" class="anchor" href="#standards-compliance"><span class="octicon octicon-link"></span></a>Standards compliance</h1>
+
+<p>Thunar supports the following standards/specifications:</p>
+
+<ul>
+<li><p>XDG Base Directory Specification
+<a href="http://freedesktop.org/wiki/Standards_2fbasedir_2dspec">http://freedesktop.org/wiki/Standards_2fbasedir_2dspec</a></p></li>
+<li><p>Shared MIME Database Specification
+<a href="http://freedesktop.org/wiki/Standards_2fshared_2dmime_2dinfo_2dspec">http://freedesktop.org/wiki/Standards_2fshared_2dmime_2dinfo_2dspec</a></p></li>
+<li><p>Icon Naming Specification
+<a href="http://freedesktop.org/wiki/Standards_2ficon_2dnaming_2dspec">http://freedesktop.org/wiki/Standards_2ficon_2dnaming_2dspec</a></p></li>
+<li><p>Icon Theme Specification
+<a href="http://freedesktop.org/wiki/Standards_2ficon_2dtheme_2dspec">http://freedesktop.org/wiki/Standards_2ficon_2dtheme_2dspec</a></p></li>
+<li><p>File URI Specification
+<a href="http://freedesktop.org/wiki/Standards_2ffile_2duri_2dspec">http://freedesktop.org/wiki/Standards_2ffile_2duri_2dspec</a></p></li>
+<li><p>Desktop Application Autostart Specification
+<a href="http://freedesktop.org/wiki/Standards_2fautostart_2dspec">http://freedesktop.org/wiki/Standards_2fautostart_2dspec</a></p></li>
+</ul><h1>
+<a name="how-to-report-bugs" class="anchor" href="#how-to-report-bugs"><span class="octicon octicon-link"></span></a>How to report bugs?</h1>
+
+<p>Bugs should be reported to the Xfce bug tracking system
+(<a href="http://bugzilla.xfce.org">http://bugzilla.xfce.org</a>, product Thunar Plugins, component
+thunar-volman). You will need to create an account for yourself.</p>
+        </section>
+
+        <footer>
+          Thunar-volman is maintained by <a href="https://github.com/Distrotech">Distrotech</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
